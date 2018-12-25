@@ -1,6 +1,7 @@
 //64Bits ALU Module
 module ALU(
-           input[63:0] A,B,  // ALU 64-bit Inputs                 
+           input[63:0] A,
+	   input[63:0] B,  // ALU 64-bit Inputs                 
            input[3:0] OPERATION,// ALU Selection
            output[63:0] Out, // ALU 64-bit Output
 	   output reg Z = 0 //  Zero bit
@@ -21,7 +22,11 @@ module ALU(
         	4'b0111: //Pass B
            		Result = B;
          	4'b1100: // Logic NOR
-           		Result = ~(A | B);
+			Result = ~(A | B);
+		4'b0101 ://new
+			Result = -A-B;
+	
+           		
           	default: Result = A + B ; 
         endcase
     end

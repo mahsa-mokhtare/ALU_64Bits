@@ -12,6 +12,7 @@ module ALUControl(ALUOp, OPCode, Operation);
 					11'b11001011000: assign Operation = 4'b0110;
 					11'b10001010000: assign Operation = 4'b0000;
 					11'b10101010000: assign Operation = 4'b0001;
+					11'h358:         assign Operation = 4'b0101;
 				endcase
 			end
 			2'b00: assign Operation = 4'b0010;
