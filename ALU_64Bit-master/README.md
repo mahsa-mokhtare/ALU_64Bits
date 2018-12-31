@@ -5,6 +5,9 @@ mips-cpu
 ## Description
 
 An implementation of a MIPS CPU written in Verilog. This project is in very early stages and currently only implements the most basic functionality of a MIPS CPU that shows in the picture.
+
+I have implement all of instructions that show in the picture.
+
 ![alt text](http://s8.picofile.com/file/8347470976/pipeline.png)
 
 PC The PC gives the address for the next instruction. On a rising clock edge (hence the single-cycle CPU), it outputs the next address it has stored.
