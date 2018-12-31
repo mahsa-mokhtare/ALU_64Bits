@@ -1,7 +1,8 @@
 #Pipeline Processor 
 
 mips-cpu
-#Description
+
+##Description
 
 An implementation of a MIPS CPU written in Verilog. This project is in very early stages and currently only implements the most basic functionality of a MIPS CPU that shows in the picture.
 ![alt text](http://s8.picofile.com/file/8347470976/pipeline.png)
